@@ -15,14 +15,14 @@ export const Comparison: React.VFC<{
       return (
         <div style={{ display: "flex", alignItems: "center" }}>
           {abs}
-          <ArrowDownwardIcon color="error" />
+          <ArrowUpwardIcon color="error" />
         </div>
       );
     } else if (sub < 0) {
       return (
         <div style={{ display: "flex", alignItems: "center" }}>
           {abs}
-          <ArrowUpwardIcon color="primary" />
+          <ArrowDownwardIcon color="primary" />
         </div>
       );
     } else {
@@ -37,14 +37,14 @@ export const Comparison: React.VFC<{
     return (
       <div style={{ display: "flex", alignItems: "center" }}>
         ---
-        <ArrowUpwardIcon color="primary" />
+        <ArrowDownwardIcon color="primary" />
       </div>
     );
   } else if (currentRank === "圏外" && preRank !== "圏外") {
     return (
       <div style={{ display: "flex", alignItems: "center" }}>
         ---
-        <ArrowDownwardIcon color="error" />
+        <ArrowUpwardIcon color="error" />
       </div>
     );
   } else {
