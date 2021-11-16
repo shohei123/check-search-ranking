@@ -41,6 +41,7 @@ export const DataTable: React.VFC = () => {
         setState({ rows: res, order: "desc", key: columns[0] });
       }
     });
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const handleClickSortColumn = (column: "keyword" | "currentRank" | "preRank" | "url") => {
